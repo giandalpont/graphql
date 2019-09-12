@@ -1,10 +1,5 @@
 # Pontos de entrada da API
 type Query {
-    ola: String
-    data: Date
-    userLog: Usuario
-    produto: Produto
-    numeroSort: [Int!]!
     usuarios: [Usuario]
     usuario(id: Int): Usuario
     perfis: [Perfil]
