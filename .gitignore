@@ -3,3 +3,7 @@
 
 /projeto/package-lock.json
 /projeto/node_modules
+
+banco-de-dados/projeto/node_modules
+banco-de-dados/projeto/package-lock.json
+banco-de-dados/projeto/yarn.lock

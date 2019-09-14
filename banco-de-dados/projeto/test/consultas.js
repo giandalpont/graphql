@@ -1,0 +1,26 @@
+const db = require('../config/db')
+
+// db('perfis')
+//     .then( res => console.log(res))
+//     .finally( () => db.destroy())
+
+// db('perfis').select('name', 'id' )
+//     .then( res => console.log(res))
+//     .finally( () => db.destroy() )
+
+// db.select('name','id')
+//     .from('perfis')
+//     .limit(4).offset(2)
+//     .then( res => console.log(res))
+//     .finally( () => db.destroy())
+
+db('perfis')
+    .select('id', 'name')
+    // .where({ id: 2 })
+    // .where('id', '=', 2)
+    // .where( 'name', 'like', '%m%' )
+    // .whereNot({ id: 2 })
+    .whereIn('id', [1,2,4,7])
+    // .first()
+    .then( res => console.log(res))
+    .finally( () => db.destroy() )
